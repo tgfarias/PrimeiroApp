@@ -19,6 +19,32 @@ class Dashboard: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Tela 2 CARREGADA")
+        //Cria um button em codigo e adiciona a view
+        let btnCriado = UIButton()
+        
+        //Configura a cor de fundo do button
+        btnCriado.backgroundColor = UIColor.gray
+        
+        //Configura o tamanho e a posicao
+        btnCriado.frame = CGRect(x: 85, y: 350, width: 150, height: 50)
+        
+        //configura o titulo do botao
+        btnCriado.setTitle("Click ME", for: UIControlState.normal)
+        
+        //configura a cor do titulo
+        btnCriado.setTitleColor(UIColor.blue, for: UIControlState.highlighted)
+        
+        //configura a acao do botao
+        btnCriado.addTarget(self, action: #selector(buttonPressed), for: UIControlEvents.touchUpInside)
+        
+        //INSERE O BOTAO NA VIEW DA TELA
+        self.view.addSubview(btnCriado)
+    }
+    
+    //funcao codificada pra ser chamada pelo botao criado via codigo
+    func buttonPressed(sender:UIButton!)
+    {
+        self.dismiss(animated: true, completion: nil)
     }
     
     //FUNCAO CHAMADA PARA INDICIAR QUE A TELA VAI SER APRESENTADA

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D7170DF61E509CF8008B113D /* NovaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7170DF51E509CF8008B113D /* NovaViewController.swift */; };
 		D7BDF8521E4F8DF300D43F20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BDF8511E4F8DF300D43F20 /* AppDelegate.swift */; };
 		D7BDF8541E4F8DF300D43F20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BDF8531E4F8DF300D43F20 /* ViewController.swift */; };
 		D7BDF8571E4F8DF300D43F20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7BDF8551E4F8DF300D43F20 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D7170DF51E509CF8008B113D /* NovaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NovaViewController.swift; sourceTree = "<group>"; };
 		D7BDF84E1E4F8DF300D43F20 /* PrimeiroApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrimeiroApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7BDF8511E4F8DF300D43F20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7BDF8531E4F8DF300D43F20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				D7BDF85A1E4F8DF300D43F20 /* LaunchScreen.storyboard */,
 				D7BDF85D1E4F8DF300D43F20 /* Info.plist */,
 				D7BDF8631E4F984600D43F20 /* Dashboard.swift */,
+				D7170DF51E509CF8008B113D /* NovaViewController.swift */,
 			);
 			path = PrimeiroApp;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			files = (
 				D7BDF8541E4F8DF300D43F20 /* ViewController.swift in Sources */,
 				D7BDF8641E4F984600D43F20 /* Dashboard.swift in Sources */,
+				D7170DF61E509CF8008B113D /* NovaViewController.swift in Sources */,
 				D7BDF8521E4F8DF300D43F20 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +305,7 @@
 				D7BDF8621E4F8DF300D43F20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -30,11 +30,34 @@ class ViewController: UIViewController {
         edPeso.resignFirstResponder()
     }
     
-    
+    //FUNCAO CHAMADA QUANDO UMA TELA EH CARREGADA
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("Tela 1 CARREGADA")
     }
 
+    //FUNCAO CHAMADA PARA INDICIAR QUE A TELA VAI SER APRESENTADA
+    override func viewWillAppear(_ animated: Bool) {
+        print("TELA 1 IRA GANHAR O FOCO")
+    }
+    
+    //FUNCAO CHAMADA PARA INDICAR QUE A TELA JA FOI APRESENTADA
+    override func viewDidAppear(_ animated: Bool) {
+        print("TELA 1 JA ENCONTRA-SE EM FOCO")
+    }
+    
+    //FUNCAO CHAMA PARA INDICAR QUE A TELA VAI PERDER O FOCO
+    override func viewWillDisappear(_ animated: Bool) {
+        print("TELA 1 VAI DESAPARECER")
+    }
+    
+    //FUNCAO CHAMADA PARA INDICAR QUE A TELA PERDEU O FOCO
+    override func viewDidDisappear(_ animated: Bool) {
+        print("TELA 1 PERDEU O FOCO")
+    }
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

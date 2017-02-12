@@ -18,10 +18,33 @@ class Dashboard: UIViewController {
         lbLabel.text = "Alo mundo"
     }
     
+    //FUNCAO CHAMADA QUANDO UMA TELA EH CARREGADA
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        print("Tela 2 CARREGADA")
     }
+    
+    //FUNCAO CHAMADA PARA INDICIAR QUE A TELA VAI SER APRESENTADA
+    override func viewWillAppear(_ animated: Bool) {
+        print("TELA 2 IRA GANHAR O FOCO")
+    }
+    
+    //FUNCAO CHAMADA PARA INDICAR QUE A TELA JA FOI APRESENTADA
+    override func viewDidAppear(_ animated: Bool) {
+        print("TELA 2 JA ENCONTRA-SE EM FOCO")
+    }
+    
+    //FUNCAO CHAMA PARA INDICAR QUE A TELA VAI PERDER O FOCO
+    override func viewWillDisappear(_ animated: Bool) {
+        print("TELA 2 VAI DESAPARECER")
+    }
+    
+    //FUNCAO CHAMADA PARA INDICAR QUE A TELA PERDEU O FOCO
+    override func viewDidDisappear(_ animated: Bool) {
+        print("TELA 2 PERDEU O FOCO")
+    }
+    
+
     
     
     override func didReceiveMemoryWarning() {

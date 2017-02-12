@@ -13,10 +13,7 @@ import UIKit
 class Dashboard: UIViewController {
     
     @IBOutlet weak var lbLabel: UILabel!
-    @IBAction func btnButton(_ sender: UIButton)
-    {
-        lbLabel.text = "Alo mundo"
-    }
+    
     
     //FUNCAO CHAMADA QUANDO UMA TELA EH CARREGADA
     override func viewDidLoad() {
@@ -46,10 +43,17 @@ class Dashboard: UIViewController {
     
 
     
-    
+    //METODO UTILIZADO PELO SISTEMA PARA ENVIAR AVISO DE FALTA DE MEMORIA
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    //METODO CRIADO PARA TRATAR O EVENTO DO BOTAO
+    @IBAction func btnButton(_ sender: UIButton)
+    {
+        //completion: bloco de finalizacacao quando "mata" a tela
+        self.dismiss(animated: true, completion: nil)
     }
     
     

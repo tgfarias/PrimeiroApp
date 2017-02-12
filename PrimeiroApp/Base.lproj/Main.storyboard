@@ -41,7 +41,7 @@
                                 <rect key="frame" x="133" y="318" width="109" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99204863143412203" green="1" blue="0.99069823862756157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Calcular"/>
+                                <state key="normal" title="CALCULAR"/>
                                 <connections>
                                     <action selector="btnCalcular:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sUO-OJ-SWS"/>
                                 </connections>
@@ -53,6 +53,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qXN-Lt-7uX">
+                                <rect key="frame" x="133" y="392" width="109" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="PROXIMA TELA"/>
+                                <connections>
+                                    <segue destination="hvt-wW-LlC" kind="presentation" id="UVi-89-FkC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -64,7 +72,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1484" y="-233.43328335832086"/>
+            <point key="canvasLocation" x="5.5999999999999996" y="-233.43328335832086"/>
         </scene>
         <!--Dashboard-->
         <scene sceneID="7Jw-Ee-dqk">
@@ -102,7 +110,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PiO-wh-PQd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="700" y="-232"/>
+            <point key="canvasLocation" x="895" y="-233"/>
         </scene>
     </scenes>
 </document>

@@ -10,9 +10,29 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var edAltura: UITextField!
+    @IBOutlet weak var edPeso: UITextField!
+    
+    @IBOutlet weak var lbResultado: UILabel!
+    @IBAction func btnCalcular(_ sender: UIButton)
+    {
+        
+        let peso:Float = Float(edPeso.text!)!
+        let altura:Float = Float(edAltura.text!)!
+        let result = peso / (altura * altura);
+        
+        lbResultado.text = ("\(result)")
+        
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        edAltura.resignFirstResponder()
+        edPeso.resignFirstResponder()
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {

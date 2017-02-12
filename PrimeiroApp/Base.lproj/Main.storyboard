@@ -94,9 +94,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y4z-Uf-1sV">
-                                <rect key="frame" x="138" y="376" width="46" height="30"/>
+                                <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Voltar"/>
                                 <connections>
                                     <action selector="btnButton:" destination="hvt-wW-LlC" eventType="touchUpInside" id="5UD-GX-ytf"/>
                                 </connections>
@@ -110,7 +110,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PiO-wh-PQd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="895" y="-233"/>
+            <point key="canvasLocation" x="893.60000000000002" y="-233.43328335832086"/>
         </scene>
     </scenes>
 </document>
